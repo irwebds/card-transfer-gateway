@@ -1,0 +1,135 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-10 15:08+0330\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgid "Card Transfer Gateway"
+msgstr ""
+
+msgid "The Card Transfer Gateway plugin is a very simple plugin for users, which eliminates the need for online payment gateways."
+msgstr ""
+
+#: inc/cronjobs.php:24
+#, php-format
+msgid "Each %s Hour"
+msgstr ""
+
+#: inc/gateway.php:22
+msgid "Card Transfer Gateway"
+msgstr ""
+
+#: inc/gateway.php:48
+msgid "Enable"
+msgstr ""
+
+#: inc/gateway.php:50
+msgid "Enable Card Transfer Gateway"
+msgstr ""
+
+#: inc/gateway.php:54
+msgid "Title"
+msgstr ""
+
+#: inc/gateway.php:56
+msgid "Card Transfer Payment"
+msgstr ""
+
+#: inc/gateway.php:59
+msgid "Description"
+msgstr ""
+
+#: inc/gateway.php:61
+msgid ""
+"Please transfer the amount to card number bellow and notify support within 3 "
+"hours."
+msgstr ""
+
+#: inc/gateway.php:64
+msgid "Automatic Cancellation"
+msgstr ""
+
+#: inc/gateway.php:66
+msgid "Enable Automatic Cancellation"
+msgstr ""
+
+#: inc/gateway.php:71
+msgid "Automatic order cancellation after hours"
+msgstr ""
+
+#: inc/gateway.php:76
+msgid "Card Number"
+msgstr ""
+
+#: inc/gateway.php:82
+msgid "Name"
+msgstr ""
+
+#: inc/gateway.php:84
+msgid "Alireza Darvishi"
+msgstr ""
+
+#: inc/gateway.php:87
+msgid "Telegram Support"
+msgstr ""
+
+#: inc/gateway.php:89
+msgid "Enable Telegram Support"
+msgstr ""
+
+#: inc/gateway.php:94
+msgid "Telegram Number/ID Link"
+msgstr ""
+
+#: inc/gateway.php:99
+msgid "Whatsapp Support"
+msgstr ""
+
+#: inc/gateway.php:101
+msgid "Enable Whatsapp Support"
+msgstr ""
+
+#: inc/gateway.php:106
+msgid "Whatsapp Link"
+msgstr ""
+
+#: inc/gateway.php:120 inc/gateway.php:161
+msgid "Owner Name:"
+msgstr ""
+
+#: inc/gateway.php:133 inc/gateway.php:172
+msgid "Contact via Whatsapp"
+msgstr ""
+
+#: inc/gateway.php:138 inc/gateway.php:177
+msgid "Contact via Telegram"
+msgstr ""
+
+#: inc/gateway.php:146
+msgid "Awaiting card transfer payment"
+msgstr ""
+
+#: inc/gateway.php:190 inc/gateway.php:201
+msgid "Waiting for Card Transfer"
+msgstr ""
+
+#: inc/gateway.php:196
+#, php-format
+msgid "Waiting for Card Transfer (%s)"
+msgid_plural "Waiting for Card Transfer (%s)"
+msgstr[0] ""
+msgstr[1] ""

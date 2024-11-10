@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'Peyda';
+    src: url('../fonts/Peyda/Peyda-Bold.woff2') format('woff2'),
+        url('../fonts/Peyda/Peyda-Bold.woff') format('woff'),
+        url('../fonts/Peyda/Peyda-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Peyda';
+    src: url('../fonts/Peyda/Peyda-Regular.woff2') format('woff2'),
+        url('../fonts/Peyda/Peyda-Regular.woff') format('woff'),
+        url('../fonts/Peyda/Peyda-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.form-table:has(#woocommerce_card_transfer_gateway_title){
+    max-width: 640px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 18px 4px 24px #43434314;
+    font-family: 'Peyda';
+}
+.form-table:has(#woocommerce_card_transfer_gateway_title) th{
+    padding-right: 12px;
+}
+.form-table:has(#woocommerce_card_transfer_gateway_title) input.regular-input{
+    width: 100%;
+    border-color: #e1e1e1;
+}
+#mainform:has(#woocommerce_card_transfer_gateway_title) .submit button{
+    padding: 22px 44px;
+    font-family: 'Peyda';
+}
+#mainform:has(#woocommerce_card_transfer_gateway_title) h2{
+    font-family:'Peyda';
+    margin-top: 32px;
+}
+.form-table:has(#woocommerce_card_transfer_gateway_title) textarea{
+    border-color: #e1e1e1;
+}
+.form-table:has(#woocommerce_card_transfer_gateway_title) tr:has(.separator-before){
+    border-top: 1px solid #e1e1e1;
+}
+.form-table:has(#woocommerce_card_transfer_gateway_title) tr:has(.separator-after){
+    border-bottom: 1px solid #e1e1e1;
+}
+@supports (-webkit-appearance: none) or (-moz-appearance: none) {
+    .form-table:has(#woocommerce_card_transfer_gateway_title) input[type=checkbox] {
+      --active: #275EFE;
+      --active-inner: #fff;
+      --focus: 2px rgba(39, 94, 254, .3);
+      --border: #BBC1E1;
+      --border-hover: #275EFE;
+      --background: #fff;
+      --disabled: #F6F8FF;
+      --disabled-inner: #E1E6F9;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      height: 21px;
+      outline: none;
+      display: inline-block;
+      vertical-align: top;
+      position: relative;
+      margin: 0;
+      cursor: pointer;
+      border: 1px solid var(--bc, var(--border));
+      background: var(--b, var(--background));
+      transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
+      margin-left: 4px;
+      margin-top: -2px;
+    }
+    .form-table:has(#woocommerce_card_transfer_gateway_title) input[type=checkbox]:after {
+      content: "";
+      display: block;
+      left: 0;
+      top: 0;
+      position: absolute;
+      transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s);
+    }
+    .form-table:has(#woocommerce_card_transfer_gateway_title) input[type=checkbox]:checked {
+      --b: var(--active);
+      --bc: var(--active);
+      --d-o: .3s;
+      --d-t: .6s;
+      --d-t-e: cubic-bezier(.2, .85, .32, 1.2);
+    }
+    .form-table:has(#woocommerce_card_transfer_gateway_title) input[type=checkbox]:disabled {
+      --b: var(--disabled);
+      cursor: not-allowed;
+      opacity: 0.9;
+    }
+    .form-table:has(#woocommerce_card_transfer_gateway_title) input[type=checkbox]:disabled:checked {
+      --b: var(--disabled-inner);
+      --bc: var(--border);
+    }
+    .form-table:has(#woocommerce_card_transfer_gateway_title) input[type=checkbox]:disabled + label {
+      cursor: not-allowed;
+    }
+    .form-table:has(#woocommerce_card_transfer_gateway_title) input[type=checkbox]:hover:not(:checked):not(:disabled) {
+      --bc: var(--border-hover);
+    }
+    .form-table:has(#woocommerce_card_transfer_gateway_title) input[type=checkbox]:focus {
+      box-shadow: 0 0 0 var(--focus);
+    }
+    .form-table:has(#woocommerce_card_transfer_gateway_title) input[type=checkbox]:not(.switch) {
+      width: 21px;
+    }
+    .form-table:has(#woocommerce_card_transfer_gateway_title) input[type=checkbox]:not(.switch):after {
+      opacity: var(--o, 0);
+    }
+    .form-table:has(#woocommerce_card_transfer_gateway_title) input[type=checkbox]:not(.switch):checked {
+      --o: 1;
+    }
+    .form-table:has(#woocommerce_card_transfer_gateway_title) input[type=checkbox] + label {
+      display: inline-block;
+      vertical-align: middle;
+      cursor: pointer;
+      margin-left: 4px;
+    }
+
+    .form-table:has(#woocommerce_card_transfer_gateway_title) input[type=checkbox]:not(.switch) {
+      border-radius: 7px;
+    }
+    .form-table:has(#woocommerce_card_transfer_gateway_title) input[type=checkbox]:not(.switch):after {
+      width: 5px;
+      height: 9px;
+      border: 2px solid var(--active-inner);
+      border-top: 0;
+      border-left: 0;
+      left: 7px;
+      top: 4px;
+      transform: rotate(var(--r, 20deg));
+    }
+    .form-table:has(#woocommerce_card_transfer_gateway_title) input[type=checkbox]:not(.switch):checked {
+      --r: 43deg;
+    }
+  }

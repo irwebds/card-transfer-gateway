@@ -1,0 +1,28 @@
+.card-pay-gateway .card-number{
+    display:block;
+    clear:both;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border: 1px solid #eee;
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+    background: #ffffe4;
+    letter-spacing: 3px;
+}
+.card-pay-gateway .card-number-owner-name b{
+    margin-left:4px;
+}
+.card-pay-gateway-telegram,
+.card-pay-gateway-whatsapp{
+    display: block;
+    margin-bottom: 10px;
+}
+.card-pay-gateway-whatsapp svg,
+.card-pay-gateway-telegram svg{
+    width: 30px;
+    height: 30px;
+    float: right;
+    margin-top: -1px;
+    margin-left: 6px;
+}

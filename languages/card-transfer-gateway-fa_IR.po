@@ -1,0 +1,141 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-10 15:08+0330\n"
+"PO-Revision-Date: 2024-11-10 15:09+0330\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fa_IR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
+"X-Generator: Poedit 3.4\n"
+
+#: inc/gateway.php:22
+msgid "Card Transfer Gateway"
+msgstr "درگاه کارت به کارت"
+
+msgid ""
+"The Card Transfer Gateway plugin is a very simple plugin for users, which "
+"eliminates the need for online payment gateways."
+msgstr ""
+"افزونه کارت به کارت، افزونه ای بسیار ساده جهت بی نیاز کردن شما از درگاه های "
+"پرداخت است."
+
+#: inc/cronjobs.php:24
+#, php-format
+msgid "Each %s Hour"
+msgstr "هر %s ساعت"
+
+#: inc/gateway.php:48
+msgid "Enable"
+msgstr "فعال سازی"
+
+#: inc/gateway.php:50
+msgid "Enable Card Transfer Gateway"
+msgstr "فعال سازی کارت به کارت"
+
+#: inc/gateway.php:54
+msgid "Title"
+msgstr "عنوان"
+
+#: inc/gateway.php:56
+msgid "Card Transfer Payment"
+msgstr "کارت به کارت"
+
+#: inc/gateway.php:59
+msgid "Description"
+msgstr "توضیحات"
+
+#: inc/gateway.php:61
+msgid ""
+"Please transfer the amount to card number bellow and notify support within 3 "
+"hours."
+msgstr ""
+"لطفا تا حداکثر 3 ساعت آینده، مبلغ کل سفارش را به شماره کارت زیر واریز و سپس "
+"رسید را به پشتیبانی ارسال نمایید."
+
+#: inc/gateway.php:64
+msgid "Automatic Cancellation"
+msgstr "لغو خودکار"
+
+#: inc/gateway.php:66
+msgid "Enable Automatic Cancellation"
+msgstr "فعالسازی لغو خودکار"
+
+#: inc/gateway.php:71
+msgid "Automatic order cancellation after hours"
+msgstr "لغو خودکار سفارش بعد از چند ساعت"
+
+#: inc/gateway.php:76
+msgid "Card Number"
+msgstr "شماره کارت"
+
+#: inc/gateway.php:82
+msgid "Name"
+msgstr "نام صاحب حساب"
+
+#: inc/gateway.php:84
+msgid "Alireza Darvishi"
+msgstr "نام صاحب حساب"
+
+#: inc/gateway.php:87
+msgid "Telegram Support"
+msgstr "پشتیبانی تلگرام"
+
+#: inc/gateway.php:89
+msgid "Enable Telegram Support"
+msgstr "فعال سازی پشتیبانی تلگرام"
+
+#: inc/gateway.php:94
+msgid "Telegram Number/ID Link"
+msgstr "لینک شماره/آیدی تلگرام"
+
+#: inc/gateway.php:99
+msgid "Whatsapp Support"
+msgstr "پشتیبانی واتساپ"
+
+#: inc/gateway.php:101
+msgid "Enable Whatsapp Support"
+msgstr "فعالسازی پشتیبانی واتساپ"
+
+#: inc/gateway.php:106
+msgid "Whatsapp Link"
+msgstr "لینک واتساپ"
+
+#: inc/gateway.php:120 inc/gateway.php:161
+msgid "Owner Name:"
+msgstr "نام صاحب حساب:"
+
+#: inc/gateway.php:133 inc/gateway.php:172
+msgid "Contact via Whatsapp"
+msgstr "تماس با واتساپ"
+
+#: inc/gateway.php:138 inc/gateway.php:177
+msgid "Contact via Telegram"
+msgstr "تماس با تلگرام"
+
+#: inc/gateway.php:146
+msgid "Awaiting card transfer payment"
+msgstr "در انتظار کارت به کارت"
+
+#: inc/gateway.php:190 inc/gateway.php:201
+msgid "Waiting for Card Transfer"
+msgstr "در انتظار کارت به کارت"
+
+#: inc/gateway.php:196
+#, php-format
+msgid "Waiting for Card Transfer (%s)"
+msgid_plural "Waiting for Card Transfer (%s)"
+msgstr[0] "در انتظار کارت به کارت (%s)"
+msgstr[1] "در انتظار کارت به کارت (%s)"
+
+#~ msgid "هر "
+#~ msgstr "هر "
