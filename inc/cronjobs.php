@@ -34,6 +34,6 @@ function ctg_cronjob_update_order_statuses_schedule( $schedules ) {
 
 $ctg_options = get_option( 'woocommerce_card_transfer_gateway_settings' );
 
-if ( ! wp_next_scheduled( 'ctg_cronjob_update_order_statuses_cron_hook' ) && $ctg_options['time_cancellation'] == 'yes') {
+if ( ! wp_next_scheduled( 'ctg_cronjob_update_order_statuses_cron_hook' ) && isset($ctg_options['time_cancellation']) && $ctg_options['time_cancellation'] == 'yes') {
     wp_schedule_event( time(), 'ctg_cronjob_update_orders', 'ctg_cronjob_update_order_statuses_cron_hook' );
 }
