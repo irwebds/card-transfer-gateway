@@ -3,7 +3,7 @@
 Plugin Name: Card Transfer Gateway
 Plugin URI: https://webds.ir/card-transfer-gateway
 Description: The Card Transfer Gateway plugin is a very simple plugin for users, which eliminates the need for online payment gateways.
-Version: 1.0.1
+Version: 1.0.2
 Author: Webds
 Author URI: https://webds.ir
 Text Domain: card-transfer-gateway
@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-define( 'CTG_VERSION', '1.0.1' );
+define( 'CTG_VERSION', '1.0.2' );
 define( 'CTG_DIR', plugin_dir_path(__FILE__));
 define( 'CTG_URI', plugin_dir_url(__FILE__));
 define( 'CTG_ASSETS_DIR', plugin_dir_path( __FILE__ ) . 'assets/');
