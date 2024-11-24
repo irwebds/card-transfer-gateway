@@ -4,9 +4,9 @@
 /*
 * Update Order Status
 */
-function ctg_cronjob_update_orders_statuses(){
-    $ctg_options = get_option( 'woocommerce_card_transfer_gateway_settings' );
-    $hours = isset($ctg_options['time']) ? (int) $ctg_options['time'] : 0;
+function ctgfree_cronjob_update_orders_statuses(){
+    $ctgfree_options = get_option( 'woocommerce_card_transfer_gateway_settings' );
+    $hours = isset($ctgfree_options['time']) ? (int) $ctgfree_options['time'] : 0;
     
     if ($hours > 0) {
         $in_seconds = $hours * 60 * 60;
@@ -24,6 +24,6 @@ function ctg_cronjob_update_orders_statuses(){
             }
         }
     }
-    do_action('ctg_after_update_orders_statuses');
+    do_action('ctgfree_after_update_orders_statuses');
 
 }

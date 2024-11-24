@@ -1,15 +1,15 @@
 <?php
 
 // Ensure WooCommerce is active before proceeding
-add_action( 'plugins_loaded', 'initialize_card_transfer_gateway', 11 );
-function initialize_card_transfer_gateway() {
+add_action( 'plugins_loaded', 'ctgfree_initialize_card_transfer_gateway', 11 );
+function ctgfree_initialize_card_transfer_gateway() {
     if ( class_exists( 'WooCommerce' ) ) {
         // Register custom order status
-        add_action( 'init', 'register_card_transfer_gateway_order_status' );
-        add_filter( 'wc_order_statuses', 'add_card_transfer_gateway_order_status' );
+        add_action( 'init', 'ctgfree_register_card_transfer_gateway_order_status' );
+        add_filter( 'wc_order_statuses', 'ctgfree_add_card_transfer_gateway_order_status' );
 
         // Register the custom payment gateway
-        add_filter( 'woocommerce_payment_gateways', 'add_card_transfer_gateway' );
+        add_filter( 'woocommerce_payment_gateways', 'ctgfree_add_card_transfer_gateway' );
         
         // Initialize the custom gateway class
         if ( ! class_exists( 'WC_Card_Transfer_Gateway' ) ) {
@@ -44,7 +44,7 @@ function initialize_card_transfer_gateway() {
                         'info' => array(
                             'title'       => '',
                             'type'        => 'title',
-                            'description' => '<a href="#" target="_blank"><img src="'.CTG_ASSETS_URI.'img/banner.jpg" width="640"/></a>',
+                            'description' => '<a href="#" target="_blank"><img src="'.CTGFREE_ASSETS_URI.'img/banner.jpg" width="640"/></a>',
                         ),
                         'enabled' => array(
                             'title'       => __('Enable','card-transfer-gateway'),
@@ -187,25 +187,30 @@ function initialize_card_transfer_gateway() {
 }
 
 // Register Waiting for Card Transfer status
-function register_card_transfer_gateway_order_status() {
-    register_post_status( 'wc-waiting-card-pay', array(
-        'label'                     => __('Waiting for Card Transfer','card-transfer-gateway'),
-        'public'                    => true,
-        'exclude_from_search'       => false,
-        'show_in_admin_all_list'    => true,
-        'show_in_admin_status_list' => true,
-        /* translators: %d is the count of orders waiting for card transfer */
-        'label_count'               => _n_noop( 'Waiting for Card Transfer (%s)', 'Waiting for Card Transfer (%s)', 'card-transfer-gateway'),
-    ) );
+if(!function_exists('ctgfree_register_card_transfer_gateway_order_status')){
+    function ctgfree_register_card_transfer_gateway_order_status() {
+        register_post_status( 'wc-waiting-card-pay', array(
+            'label'                     => __('Waiting for Card Transfer','card-transfer-gateway'),
+            'public'                    => true,
+            'exclude_from_search'       => false,
+            'show_in_admin_all_list'    => true,
+            'show_in_admin_status_list' => true,
+            /* translators: %d is the count of orders waiting for card transfer */
+            'label_count'               => _n_noop( 'Waiting for Card Transfer (%s)', 'Waiting for Card Transfer (%s)', 'card-transfer-gateway'),
+        ) );
+    }
 }
-
-function add_card_transfer_gateway_order_status( $order_statuses ) {
-    $order_statuses['wc-waiting-card-pay'] = __('Waiting for Card Transfer','card-transfer-gateway');
-    return $order_statuses;
+if(!function_exists('ctgfree_add_card_transfer_gateway_order_status')){
+    function ctgfree_add_card_transfer_gateway_order_status( $order_statuses ) {
+        $order_statuses['wc-waiting-card-pay'] = __('Waiting for Card Transfer','card-transfer-gateway');
+        return $order_statuses;
+    }
 }
 
 // Add the Card Transfer Gateway
-function add_card_transfer_gateway( $gateways ) {
-    $gateways[] = 'WC_Card_Transfer_Gateway';
-    return $gateways;
+if(!function_exists('ctgfree_add_card_transfer_gateway')){
+    function ctgfree_add_card_transfer_gateway( $gateways ) {
+        $gateways[] = 'WC_Card_Transfer_Gateway';
+        return $gateways;
+    }
 }

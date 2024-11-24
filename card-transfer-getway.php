@@ -38,25 +38,21 @@ include CTGFREE_INC_DIR . 'updateStatus.php';
 /**
  * Enqueue dashbaord Assets
  */
-if(!function_exists('ctgfree_dashboard_enqueue_assets')){
-    function ctgfree_dashboard_enqueue_assets() {
+function ctgfree_dashboard_enqueue_assets() {
 
-        wp_enqueue_style( 'ctg',  CTGFREE_ASSETS_URI . 'css/dashboard.css','',CTGFREE_VERSION );
+    wp_enqueue_style( 'ctg',  CTGFREE_ASSETS_URI . 'css/dashboard.css','',CTGFREE_VERSION );
 
-    }
 }
 add_action( 'admin_enqueue_scripts', 'ctgfree_dashboard_enqueue_assets' );
 
 /**
  * Enqueue front-end Assets
  */
-if(!function_exists('ctgfree_frontend_enqueue_assets')){
-    function ctgfree_frontend_enqueue_assets() {
+function ctgfree_frontend_enqueue_assets() {
 
-        if( is_checkout() || !empty( is_wc_endpoint_url('order-received') ) || (function_exists('is_account_page') &&  is_account_page()) ){
-            wp_enqueue_style( 'ctg',  CTGFREE_ASSETS_URI . 'css/ctg-style.css','',CTGFREE_VERSION );
-        }
-       
+    if( is_checkout() || !empty( is_wc_endpoint_url('order-received') ) || (function_exists('is_account_page') &&  is_account_page()) ){
+        wp_enqueue_style( 'ctg',  CTGFREE_ASSETS_URI . 'css/ctg-style.css','',CTGFREE_VERSION );
     }
+   
 }
 add_action( 'wp_enqueue_scripts', 'ctgfree_frontend_enqueue_assets' );

@@ -6,35 +6,35 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 * Set Cronjob: Update Order Statuses
 *
 */
-add_filter( 'cron_schedules', 'ctg_cronjob_update_order_statuses_schedule' );
-add_action( 'ctg_cronjob_update_order_statuses_cron_hook', 'ctg_cronjob_update_orders_statuses' );
+add_filter( 'cron_schedules', 'ctgfree_cronjob_update_order_statuses_schedule' );
+add_action( 'ctgfree_cronjob_update_order_statuses_cron_hook', 'ctgfree_cronjob_update_orders_statuses' );
 
-function ctg_cronjob_update_order_statuses_schedule( $schedules ) {
+function ctgfree_cronjob_update_order_statuses_schedule( $schedules ) {
 
     if(!defined('CTGPRO_VERSION')){
-        $ctg_options = get_option( 'woocommerce_card_transfer_gateway_settings' );
-        if($ctg_options && !empty($ctg_options)){
+        $ctgfree_options = get_option( 'woocommerce_card_transfer_gateway_settings' );
+        if($ctgfree_options && !empty($ctgfree_options)){
 
-            $cancellation = !empty($ctg_options['time_cancellation']) && $ctg_options['time_cancellation'] == 'yes' ? true : false;
+            $cancellation = !empty($ctgfree_options['time_cancellation']) && $ctgfree_options['time_cancellation'] == 'yes' ? true : false;
         
             if ($cancellation) {
-                $schedules['ctg_cronjob_update_orders'] = array(
+                $schedules['ctgfree_cronjob_update_orders'] = array(
                     'interval' => 300,
                     // translators: %s is replaced by the number of hours.
                     'display'  => sprintf( __( 'Every %s Minutes', 'card-transfer-gateway' ), 5 ),
                 );
             }else{
-                unset($schedules['ctg_cronjob_update_orders']);
+                unset($schedules['ctgfree_cronjob_update_orders']);
             }
         }
     }else{
-        unset($schedules['ctg_cronjob_update_orders']);
+        unset($schedules['ctgfree_cronjob_update_orders']);
     }
     return $schedules;
 }
 
-$ctg_options = get_option( 'woocommerce_card_transfer_gateway_settings' );
+$ctgfree_options = get_option( 'woocommerce_card_transfer_gateway_settings' );
 
-if (!defined('CTGPRO_VERSION') && ! wp_next_scheduled( 'ctg_cronjob_update_order_statuses_cron_hook' ) && isset($ctg_options['time_cancellation']) && $ctg_options['time_cancellation'] == 'yes') {
-    wp_schedule_event( time(), 'ctg_cronjob_update_orders', 'ctg_cronjob_update_order_statuses_cron_hook' );
+if (!defined('CTGPRO_VERSION') && ! wp_next_scheduled( 'ctgfree_cronjob_update_order_statuses_cron_hook' ) && isset($ctgfree_options['time_cancellation']) && $ctgfree_options['time_cancellation'] == 'yes') {
+    wp_schedule_event( time(), 'ctgfree_cronjob_update_orders', 'ctgfree_cronjob_update_order_statuses_cron_hook' );
 }
