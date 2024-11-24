@@ -1,4 +1,5 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 // Ensure WooCommerce is active before proceeding
 add_action( 'plugins_loaded', 'ctgfree_initialize_card_transfer_gateway', 11 );
