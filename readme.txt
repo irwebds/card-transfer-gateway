@@ -2,7 +2,7 @@
 Contributors: irwebds
 Tags: Card to Card, Card Transfer, کارت به کارت, انتقال کارتی
 Requires at least: 3.3.0
-Tested up to: 6.6
+Tested up to: 6.7
 Stable tag: 1.0.3
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
