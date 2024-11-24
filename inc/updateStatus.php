@@ -20,7 +20,10 @@ function ctg_cronjob_update_orders_statuses(){
             foreach ( $orders as $order ) {
                 // Update Status
                 $order->update_status( 'wc-cancelled' );
+                $order->save();
             }
         }
     }
+    do_action('ctg_after_update_orders_statuses');
+
 }
