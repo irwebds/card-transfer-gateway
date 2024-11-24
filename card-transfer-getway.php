@@ -50,7 +50,7 @@ add_action( 'admin_enqueue_scripts', 'ctg_dashboard_enqueue_assets' );
  */
 function ctg_frontend_enqueue_assets() {
 
-    if( is_checkout() || !empty( is_wc_endpoint_url('order-received') ) ){
+    if( is_checkout() || !empty( is_wc_endpoint_url('order-received') ) || (function_exists('is_account_page') &&  is_account_page()) ){
         wp_enqueue_style( 'ctg',  CTG_ASSETS_URI . 'css/ctg-style.css','',CTG_VERSION );
     }
    
