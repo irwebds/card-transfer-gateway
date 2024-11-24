@@ -34,7 +34,9 @@ function initialize_card_transfer_gateway() {
                     $this->whatsapp_support = $this->get_option( 'whatsapp_support' );
 
                     add_action( 'woocommerce_update_options_payment_gateways_' . $this->id, array( $this, 'process_admin_options' ) );
-                    add_action( 'woocommerce_thankyou_' . $this->id, array( $this, 'thankyou_page' ) );
+                    if(!defined('CTGPRO_VERSION')){
+                        add_action( 'woocommerce_thankyou_' . $this->id, array( $this, 'thankyou_page' ) );
+                    }
                 }
 
                 public function init_form_fields() {
