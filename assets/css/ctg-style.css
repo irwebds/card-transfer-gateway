@@ -15,8 +15,9 @@
 }
 .card-pay-gateway-telegram,
 .card-pay-gateway-whatsapp{
-    display: block;
+    display: flex;
     margin-bottom: 10px;
+    align-items: center;
 }
 .card-pay-gateway-whatsapp svg,
 .card-pay-gateway-telegram svg{
