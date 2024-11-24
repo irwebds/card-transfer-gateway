@@ -87,6 +87,7 @@ That's all, now you can use it on your website. If any problem occurs, contact u
 == Changelog ==
 = 1.0.4 =
 * Update prefixes
+* Block Direct Files Access
 
 = 1.0.3 =
 * Make it compatible with pro version
