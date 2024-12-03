@@ -45,7 +45,7 @@ function ctgfree_initialize_card_transfer_gateway() {
                         'info' => array(
                             'title'       => '',
                             'type'        => 'title',
-                            'description' => '<a href="https://wipna.com/card-transfer-gateway/" target="_blank"><img src="'.CTGFREE_ASSETS_URI.'img/banner.jpg" width="640"/></a>',
+                            'description' => '<a href="https://wipna.com/card-transfer-gateway/" target="_blank">' .'<img src="' . esc_url( CTGFREE_ASSETS_URI . 'img/banner.jpg' ) . '" width="640" loading="lazy" alt="Banner"/>' .'</a>',
                         ),
                         'enabled' => array(
                             'title'       => __('Enable','card-transfer-gateway'),
@@ -118,10 +118,10 @@ function ctgfree_initialize_card_transfer_gateway() {
                     <fieldset>
                         <p class="form-row form-row-wide card-pay-gateway">
                             <?php echo (!empty($this->description) ? esc_attr($this->description):''); ?>
-                            <span class="card-number"><?php echo (!empty($this->cardnumber) ? esc_attr($this->cardnumber):__('There is no card number.','card-transfer-gateway')); ?></span>
+                            <span class="card-number"><?php echo (!empty($this->cardnumber) ? esc_attr($this->cardnumber):esc_attr('There is no card number.','card-transfer-gateway')); ?></span>
                             <span class="card-number-owner-name">
                                 <b><?php echo esc_html__('Owner Name:', 'card-transfer-gateway'); ?></b> 
-                                <?php echo (!empty($this->cardnumberName) ?  esc_html( $this->cardnumberName ) : __('There is no name.', 'card-transfer-gateway') ); ?>
+                                <?php echo (!empty($this->cardnumberName) ?  esc_html( $this->cardnumberName ) : esc_attr('There is no name.', 'card-transfer-gateway') ); ?>
                             </span>
                         </p>                        
                         <div class="clear"></div>
