@@ -3,7 +3,7 @@ Contributors: irwebds
 Tags: Card to Card, Card Transfer, کارت به کارت, انتقال کارتی
 Requires at least: 3.3.0
 Tested up to: 6.7
-Stable tag: 1.0.8
+Stable tag: 1.0.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -85,31 +85,6 @@ That's all, now you can use it on your website. If any problem occurs, contact u
 3.  Back-end 
 
 == Changelog ==
-= 1.0.7 =
-* Fix non-generic placeholders as examples
-
-= 1.0.7 =
-* Add Arabic language
-
-= 1.0.6 =
-* Make it compatible with pro version
-
-= 1.0.5 =
-* Fix issues
-
-= 1.0.4 =
-* Update prefixes
-* Block Direct Files Access
-
-= 1.0.3 =
-* Make it compatible with pro version
-* Fix Cronjobs Issue
-
-= 1.0.2 =
-*  Fix a warning
-
-= 1.0.1 =
-*  Fix some keywords
 
 = 1.0.0 =
 *  Initial version
