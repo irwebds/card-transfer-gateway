@@ -45,7 +45,7 @@ function ctgfree_initialize_card_transfer_gateway() {
                         'info' => array(
                             'title'       => '',
                             'type'        => 'title',
-                            'description' => '<a href="#" target="_blank"><img src="'.CTGFREE_ASSETS_URI.'img/banner.jpg" width="640"/></a>',
+                            'description' => '<a href="https://wipna.com/card-transfer-gateway/" target="_blank"><img src="'.CTGFREE_ASSETS_URI.'img/banner.jpg" width="640"/></a>',
                         ),
                         'enabled' => array(
                             'title'       => __('Enable','card-transfer-gateway'),
@@ -61,54 +61,54 @@ function ctgfree_initialize_card_transfer_gateway() {
                         'description' => array(
                             'title'       =>  __('Description','card-transfer-gateway'),
                             'type'        => 'textarea',
-                            'default'     => __('Please transfer the amount to card number bellow and notify support within 3 hours.','card-transfer-gateway')
+                            'placeholder'     => __('Enter the payment method description here.','card-transfer-gateway')
                         ),
                         'time_cancellation' => array(
                             'title'       => __('Automatic Cancellation','card-transfer-gateway'),
                             'type'        => 'checkbox',
                             'label'       => __('Enable Automatic Cancellation','card-transfer-gateway'),
-                            'default'     => 'yes',
+                            'default'     => 'no',
                             'class'       => 'separator-before'
                         ),
                         'time' => array(
                             'title'       => __('Automatic order cancellation after hours','card-transfer-gateway'),
                             'type'        => 'number',
-                            'default'     => '3'
+                            'placeholder' => __('For Example: 12','card-transfer-gateway'),
                         ),
                         'cardnumber' => array(
                             'title'       => __('Card Number','card-transfer-gateway'),
                             'type'        => 'text',
-                            'default'     => '6037-1111-2222-3333',
-                            'class'       => 'separator-before'
+                            'class'       => 'separator-before',
+                            'placeholder' => __('Card Number','card-transfer-gateway')
                         ),
                         'cardnumber_name' => array(
                             'title'       => __('Name','card-transfer-gateway'),
                             'type'        => 'text',
-                            'default'     => __('Alireza Darvishi','card-transfer-gateway')
+                            'placeholder' => __('Owner Name','card-transfer-gateway')
                         ),
                         'telegram' => array(
                             'title'       => __('Telegram Support','card-transfer-gateway'),
                             'type'        => 'checkbox',
                             'label'       => __('Enable Telegram Support','card-transfer-gateway'),
-                            'default'     => 'yes',
+                            'default'     => 'no',
                             'class'       => 'separator-before'
                         ),
                         'telegram_support' => array(
                             'title'       => __('Telegram Number/ID Link','card-transfer-gateway'),
                             'type'        => 'text',
-                            'default'     => 'https://t.me/+989124445566'
+                            'placeholder'     => 'https://t.me/+989112223333'
                         ),
                         'whatsapp' => array(
                             'title'       => __('Whatsapp Support','card-transfer-gateway'),
                             'type'        => 'checkbox',
                             'label'       => __('Enable Whatsapp Support','card-transfer-gateway'),
-                            'default'     => 'yes',
+                            'default'     => 'no',
                             'class'       => 'separator-before'
                         ),
                         'whatsapp_support' => array(
                             'title'       => __('Whatsapp Link','card-transfer-gateway'),
                             'type'        => 'text',
-                            'default'     => 'https://wa.me/+989124445566'
+                            'placeholder'     => 'https://wa.me/+989112223333'
                         ),
                     );
                 }
@@ -117,11 +117,11 @@ function ctgfree_initialize_card_transfer_gateway() {
                     ?>
                     <fieldset>
                         <p class="form-row form-row-wide card-pay-gateway">
-                            <?php echo esc_attr($this->description); ?>
-                            <span class="card-number"><?php echo esc_attr($this->cardnumber); ?></span>
+                            <?php echo (!empty($this->description) ? esc_attr($this->description):''); ?>
+                            <span class="card-number"><?php echo (!empty($this->cardnumber) ? esc_attr($this->cardnumber):__('There is no card number.','card-transfer-gateway')); ?></span>
                             <span class="card-number-owner-name">
                                 <b><?php echo esc_html__('Owner Name:', 'card-transfer-gateway'); ?></b> 
-                                <?php echo esc_html( $this->cardnumberName ); ?>
+                                <?php echo (!empty($this->cardnumberName) ?  esc_html( $this->cardnumberName ) : __('There is no name.', 'card-transfer-gateway') ); ?>
                             </span>
                         </p>                        
                         <div class="clear"></div>
