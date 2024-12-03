@@ -7,129 +7,128 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-10 15:08+0330\n"
-"PO-Revision-Date: 2024-11-30 12:13+0330\n"
+"POT-Creation-Date: 2024-12-03 17:55+0330\n"
+"PO-Revision-Date: 2024-12-03 17:59+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
-"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && "
+"n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
 "X-Generator: Poedit 3.4\n"
-
-#: inc/gateway.php:22
-msgid "Card Transfer Gateway"
-msgstr "بوابة تحويل البطاقات"
-
-msgid ""
-"The Card Transfer Gateway plugin is a very simple plugin for users, which "
-"eliminates the need for online payment gateways."
-msgstr ""
-"يعد مكون Card Transfer Gateway مكونًا إضافيًا بسيطًا للغاية للمستخدمين، حيث "
-"يلغي الحاجة إلى بوابات الدفع عبر الإنترنت."
 
 #: inc/cronjobs.php:24
 #, php-format
-msgid "Each %s Hour"
-msgstr "كل %s ساعة"
+msgid "Every %s Minutes"
+msgstr "كل %s دقيقة"
 
-#: inc/gateway.php:48
+#: inc/gateway.php:23
+msgid "Card Transfer Gateway"
+msgstr "بوابة تحويل البطاقات"
+
+#: inc/gateway.php:51
 msgid "Enable"
 msgstr "يُمكَِن"
 
-#: inc/gateway.php:50
+#: inc/gateway.php:53
 msgid "Enable Card Transfer Gateway"
 msgstr "تمكين بوابة نقل البطاقة"
 
-#: inc/gateway.php:54
+#: inc/gateway.php:57
 msgid "Title"
 msgstr "عنوان"
 
-#: inc/gateway.php:56
+#: inc/gateway.php:59
 msgid "Card Transfer Payment"
 msgstr "الدفع عن طريق تحويل البطاقة"
 
-#: inc/gateway.php:59
+#: inc/gateway.php:62
 msgid "Description"
 msgstr "وصف"
 
-#: inc/gateway.php:61
-msgid ""
-"Please transfer the amount to card number bellow and notify support within 3 "
-"hours."
-msgstr "يرجى تحويل المبلغ إلى رقم البطاقة أدناه وإخطار الدعم خلال 3 ساعات."
-
 #: inc/gateway.php:64
+msgid "Enter the payment method description here."
+msgstr "أدخل وصف طريقة الدفع هنا."
+
+#: inc/gateway.php:67
 msgid "Automatic Cancellation"
 msgstr "الإلغاء التلقائي"
 
-#: inc/gateway.php:66
+#: inc/gateway.php:69
 msgid "Enable Automatic Cancellation"
 msgstr "تمكين الإلغاء التلقائي"
 
-#: inc/gateway.php:71
+#: inc/gateway.php:74
 msgid "Automatic order cancellation after hours"
 msgstr "إلغاء الطلب تلقائيًا بعد ساعات العمل"
 
 #: inc/gateway.php:76
+msgid "For Example: 12"
+msgstr "على سبيل المثال: 12"
+
+#: inc/gateway.php:79 inc/gateway.php:82
 msgid "Card Number"
 msgstr "رقم البطاقة"
 
-#: inc/gateway.php:82
+#: inc/gateway.php:85
 msgid "Name"
 msgstr "اسم"
 
-#: inc/gateway.php:84
-msgid "Alireza Darvishi"
-msgstr "علي رضا درويشي"
-
 #: inc/gateway.php:87
+msgid "Owner Name"
+msgstr "اسم المالك"
+
+#: inc/gateway.php:90
 msgid "Telegram Support"
 msgstr "دعم تيليجرام"
 
-#: inc/gateway.php:89
+#: inc/gateway.php:92
 msgid "Enable Telegram Support"
 msgstr "تفعيل دعم تيليجرام"
 
-#: inc/gateway.php:94
+#: inc/gateway.php:97
 msgid "Telegram Number/ID Link"
 msgstr "رابط رقم التليجرام/المعرف"
 
-#: inc/gateway.php:99
+#: inc/gateway.php:102
 msgid "Whatsapp Support"
 msgstr "دعم الواتس اب"
 
-#: inc/gateway.php:101
+#: inc/gateway.php:104
 msgid "Enable Whatsapp Support"
 msgstr "تفعيل دعم الواتس اب"
 
-#: inc/gateway.php:106
+#: inc/gateway.php:109
 msgid "Whatsapp Link"
 msgstr "رابط الواتس اب"
 
-#: inc/gateway.php:120 inc/gateway.php:161
+#: inc/gateway.php:123 inc/gateway.php:164
 msgid "Owner Name:"
 msgstr "اسم المالك:"
 
-#: inc/gateway.php:133 inc/gateway.php:172
+#: inc/gateway.php:124
+msgid "There is no name."
+msgstr "لا يوجد اسم."
+
+#: inc/gateway.php:136 inc/gateway.php:175
 msgid "Contact via Whatsapp"
 msgstr "التواصل عبر الواتس اب"
 
-#: inc/gateway.php:138 inc/gateway.php:177
+#: inc/gateway.php:141 inc/gateway.php:180
 msgid "Contact via Telegram"
 msgstr "التواصل عبر التليجرام"
 
-#: inc/gateway.php:146
+#: inc/gateway.php:149
 msgid "Awaiting card transfer payment"
 msgstr "في انتظار دفع تحويل البطاقة"
 
-#: inc/gateway.php:190 inc/gateway.php:201
+#: inc/gateway.php:194 inc/gateway.php:206
 msgid "Waiting for Card Transfer"
 msgstr "في انتظار تحويل البطاقة"
 
-#: inc/gateway.php:196
+#: inc/gateway.php:200
 #, php-format
 msgid "Waiting for Card Transfer (%s)"
 msgid_plural "Waiting for Card Transfer (%s)"
@@ -140,5 +139,24 @@ msgstr[3] "في انتظار تحويل البطاقة (%s)"
 msgstr[4] "في انتظار تحويل البطاقة (%s)"
 msgstr[5] "في انتظار تحويل البطاقة (%s)"
 
-#~ msgid "هر "
-#~ msgstr "هر "
+msgid ""
+"The Card Transfer Gateway plugin is a very simple plugin for users, which "
+"eliminates the need for online payment gateways."
+msgstr ""
+"يعد مكون Card Transfer Gateway مكونًا إضافيًا بسيطًا للغاية للمستخدمين، حيث يلغي "
+"الحاجة إلى بوابات الدفع عبر الإنترنت."
+
+#, php-format
+msgid "Each %s Hour"
+msgstr "كل %s ساعة"
+
+msgid ""
+"Please transfer the amount to card number bellow and notify support within 3 "
+"hours."
+msgstr "يرجى تحويل المبلغ إلى رقم البطاقة أدناه وإخطار الدعم خلال 3 ساعات."
+
+msgid "Alireza Darvishi"
+msgstr "علي رضا درويشي"
+
+msgid "هر "
+msgstr "هر "
