@@ -127,6 +127,9 @@ msgstr ""
 msgid "Waiting for Card Transfer"
 msgstr ""
 
+msgid "There is no card number."
+msgstr ""
+
 #: inc/gateway.php:200
 #, php-format
 msgid "Waiting for Card Transfer (%s)"
