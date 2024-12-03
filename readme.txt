@@ -3,7 +3,7 @@ Contributors: irwebds
 Tags: Card to Card, Card Transfer, کارت به کارت, انتقال کارتی
 Requires at least: 3.3.0
 Tested up to: 6.7
-Stable tag: 1.0.5
+Stable tag: 1.0.6
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -16,7 +16,7 @@ The Card Transfer Gateway plugin is a very simple plugin for users, which elimin
 
 ### نمونه نصب شده: 
 
-*   [دمو افزونه کارت به کارت](https://webds.ir/card-transfer-gateway/)
+*   [دمو افزونه کارت به کارت](https://wipna.com/card-transfer-gateway/)
 
 این پلاگین شامل ویژگی های مفیدی است که در اینجا آمده است.
 
@@ -34,7 +34,7 @@ The Card Transfer Gateway plugin is a very simple plugin for users, which elimin
 *   **امکان تعیین زمان**
 *   **امکان تعیین وضعیت در انتظار کارت به کارت برای سفارشات**
 
-شما میتوانید نسخه پرمیوم را با مراجعه به [سایت webds.ir](https://webds.ir/card-transfer-gateway/) نسخه پرمیوم را دریافت نمایید.
+شما میتوانید نسخه پرمیوم را با مراجعه به [سایت wipna.com](https://wipna.com/card-transfer-gateway/) نسخه پرمیوم را دریافت نمایید.
 
 ### ویژگی های نسخه پرمیوم
 
@@ -48,7 +48,7 @@ The Card Transfer Gateway plugin is a very simple plugin for users, which elimin
 *   **امکان تغییر وضعیت به وضعیت دلخواه در ساعت خاص**
 *   **امکان محدود سازی مبلغ و تعداد تراکنش برای هر کارت یا حساب**
 
-اگر هرگونه مشکلی یا پیشنهادی داشتید میتوانید به ایمیل ما ارسال نمایید. support@webds.ir
+اگر هرگونه مشکلی یا پیشنهادی داشتید میتوانید به ایمیل ما ارسال نمایید. support@wipna.com
 
 
 == Installation ==
@@ -60,11 +60,11 @@ The Card Transfer Gateway plugin is a very simple plugin for users, which elimin
 3. Then click "Choose file" then select the plugin zip file. 
 4. Install and activate our plugin.     
 	  
-That's all, now you can use it on your website. If any problem occurs, contact us at [support@webds.ir](mailto:support@webds.ir).
+That's all, now you can use it on your website. If any problem occurs, contact us at [support@wipna.com](mailto:support@wipna.com).
 
 == Frequently Asked Questions ==
 
-شما همواره میتوانید از طریق سایت webds.ir با ما در ارتباط باشید و سوالات خود را مطرح نمایید.
+شما همواره میتوانید از طریق سایت wipna.com با ما در ارتباط باشید و سوالات خود را مطرح نمایید.
 
 = چگونه میتوان این درگاه را فعال کرد؟ =
 
@@ -85,6 +85,9 @@ That's all, now you can use it on your website. If any problem occurs, contact u
 3.  Back-end 
 
 == Changelog ==
+= 1.0.6 =
+* Make it compatible with pro version
+
 = 1.0.5 =
 * Fix issues
 
