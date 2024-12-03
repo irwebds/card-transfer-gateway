@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: Card Transfer Gateway
-Plugin URI: https://webds.ir/card-transfer-gateway
+Plugin URI: https://wipna.com/card-transfer-gateway
 Description: The Card Transfer Gateway plugin is a very simple plugin for users, which eliminates the need for online payment gateways.
-Version: 1.0.5
-Author: Webds
-Author URI: https://webds.ir
+Version: 1.0.6
+Author: Wipna
+Author URI: https://wipna.com/
 Text Domain: card-transfer-gateway
 Domain Path: /languages
 License: GPL v3 or later
@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-define( 'CTGFREE_VERSION', '1.0.5' );
+define( 'CTGFREE_VERSION', '1.0.6' );
 define( 'CTGFREE_DIR', plugin_dir_path(__FILE__));
 define( 'CTGFREE_URI', plugin_dir_url(__FILE__));
 define( 'CTGFREE_ASSETS_DIR', plugin_dir_path( __FILE__ ) . 'assets/');
