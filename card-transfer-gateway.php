@@ -3,7 +3,7 @@
 Plugin Name: Card Transfer Gateway
 Plugin URI: https://wipna.com/card-transfer-gateway
 Description: The Card Transfer Gateway plugin is a very simple plugin for users, which eliminates the need for online payment gateways.
-Version: 1.0.7
+Version: 1.0.8
 Author: Wipna
 Author URI: https://wipna.com/
 Text Domain: card-transfer-gateway
@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-define( 'CTGFREE_VERSION', '1.0.7' );
+define( 'CTGFREE_VERSION', '1.0.8' );
 define( 'CTGFREE_DIR', plugin_dir_path(__FILE__));
 define( 'CTGFREE_URI', plugin_dir_url(__FILE__));
 define( 'CTGFREE_ASSETS_DIR', plugin_dir_path( __FILE__ ) . 'assets/');
